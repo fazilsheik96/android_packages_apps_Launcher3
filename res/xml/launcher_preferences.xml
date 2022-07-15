@@ -182,6 +182,24 @@
             android:min="0"
             settings:units="px"
             android:defaultValue="23" />
+
+        <co.aospa.framework.preference.CustomSeekBarPreference
+            android:key="pref_app_drawer_opacity"
+            android:title="@string/background_opacity_title"
+            android:persistent="true"
+            android:max="100"
+            android:min="0"
+            settings:units="%"
+            android:defaultValue="80" />
+
+        <co.aospa.framework.preference.CustomSeekBarPreference
+            android:key="pref_recents_opacity"
+            android:title="@string/background_opacity_title"
+            android:persistent="true"
+            android:max="100"
+            android:min="0"
+            settings:units="%"
+            android:defaultValue="40" />
     </androidx.preference.PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>
