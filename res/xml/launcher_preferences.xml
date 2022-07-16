@@ -172,6 +172,16 @@
             android:title="@string/recents_clear_all_title"
             android:defaultValue="true"
             android:persistent="true" />
+
+        <co.aospa.framework.preference.CustomSeekBarPreference
+            android:key="pref_blur_depth"
+            android:title="@string/background_blur_title"
+            android:summary="@string/background_blur_summary"
+            android:persistent="true"
+            android:max="175"
+            android:min="0"
+            settings:units="px"
+            android:defaultValue="23" />
     </androidx.preference.PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>
