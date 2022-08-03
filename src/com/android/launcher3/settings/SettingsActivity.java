@@ -75,6 +75,8 @@ import com.android.quickstep.util.AssistUtils;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
+import com.android.systemui.shared.system.BlurUtils;
+
 /**
  * Settings activity for Launcher. Currently implements the following setting: Allow rotation
  */
@@ -327,6 +329,9 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                         return false;
                     }
                     return true;
+
+                case Utilities.KEY_BLUR_DEPTH:
+                    return BlurUtils.supportsBlursOnWindows();
             }
 
             return true;
