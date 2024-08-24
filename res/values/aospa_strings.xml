@@ -81,4 +81,7 @@
 
     <!-- Background opacity -->
     <string name="background_opacity_title">Background opacity</string>
+
+    <!-- LMOFreeform -->
+    <string name="floating_window">Floating</string>
 </resources>
